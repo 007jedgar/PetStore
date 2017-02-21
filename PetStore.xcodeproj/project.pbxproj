@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		697FFA16872B42C9D7B0C751 /* libPods-PetStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54469F09003C7B9000E9A21C /* libPods-PetStore.a */; };
 		AB6181D51E5CB547000497CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6181D41E5CB547000497CA /* main.m */; };
 		AB6181D81E5CB547000497CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6181D71E5CB547000497CA /* AppDelegate.m */; };
 		AB6181DB1E5CB547000497CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6181DA1E5CB547000497CA /* ViewController.m */; };
@@ -33,6 +34,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0963BAB37F0AA2B71C1210AF /* Pods-PetStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetStore/Pods-PetStore.release.xcconfig"; sourceTree = "<group>"; };
+		54469F09003C7B9000E9A21C /* libPods-PetStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DF7B29296A67170A85753A /* Pods-PetStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetStore/Pods-PetStore.debug.xcconfig"; sourceTree = "<group>"; };
 		AB6181D01E5CB547000497CA /* PetStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6181D41E5CB547000497CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB6181D61E5CB547000497CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA372211E5CBE7700CD388A /* MyCustomControlFramework.framework in Frameworks */,
+				697FFA16872B42C9D7B0C751 /* libPods-PetStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				AB61820F1E5CBD7D000497CA /* MyCustomControlFramework.framework */,
 				AB6181D21E5CB547000497CA /* PetStore */,
 				AB6181D11E5CB547000497CA /* Products */,
+				C163795447B88E816EE49954 /* Pods */,
+				B0E449BBB8413E4BA09E05ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B0E449BBB8413E4BA09E05ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54469F09003C7B9000E9A21C /* libPods-PetStore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C163795447B88E816EE49954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60DF7B29296A67170A85753A /* Pods-PetStore.debug.xcconfig */,
+				0963BAB37F0AA2B71C1210AF /* Pods-PetStore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,10 +134,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB6181E71E5CB547000497CA /* Build configuration list for PBXNativeTarget "PetStore" */;
 			buildPhases = (
+				6492D41FC85C64D18F907FA0 /* [CP] Check Pods Manifest.lock */,
 				AB6181CC1E5CB547000497CA /* Sources */,
 				AB6181CD1E5CB547000497CA /* Frameworks */,
 				AB6181CE1E5CB547000497CA /* Resources */,
 				AB6181EE1E5CB5F7000497CA /* Embed Frameworks */,
+				DC09D3A029F1E016B961BF70 /* [CP] Embed Pods Frameworks */,
+				5A6D6F544BAC3A987EB9C62D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A6D6F544BAC3A987EB9C62D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetStore/Pods-PetStore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6492D41FC85C64D18F907FA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC09D3A029F1E016B961BF70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetStore/Pods-PetStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB6181CC1E5CB547000497CA /* Sources */ = {
@@ -297,6 +372,7 @@
 		};
 		AB6181E81E5CB547000497CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60DF7B29296A67170A85753A /* Pods-PetStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JVCXTUSEZC;
@@ -313,6 +389,7 @@
 		};
 		AB6181E91E5CB547000497CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0963BAB37F0AA2B71C1210AF /* Pods-PetStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JVCXTUSEZC;
